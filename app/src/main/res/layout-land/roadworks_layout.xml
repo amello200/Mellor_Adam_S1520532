@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    Student Name: Adam James Mellor-->
+<!--    Student Matriculation ID: S1520532-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/roadworks_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="14dp"
+    android:paddingTop="14dp"
+    android:paddingRight="14dp"
+    android:paddingBottom="14dp"
+    tools:context=".Roadworks">
+
+    <TextView
+        android:id="@+id/selectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        android:text="Calender to select a date or search for a road" />
+
+    <Button
+        android:id="@+id/selectDateButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="2dp"
+        android:text="Calendar" />
+
+    <EditText
+        android:id="@+id/searchBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Enter roadwork name"/>
+
+    <Button
+        android:id="@+id/getRW"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="23dp"
+        android:text="Search"/>
+
+    <ListView
+        android:id="@+id/roadworksListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/selectDateButton"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="6dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="69dp">
+    </ListView>
+
+    <ListView
+        android:id="@+id/selectedList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/roadworksListView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="69dp">
+    </ListView>
+</RelativeLayout>

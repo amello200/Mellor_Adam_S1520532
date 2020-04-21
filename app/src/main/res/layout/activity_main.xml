@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    Student Name: Adam James Mellor-->
+<!--    Student Matriculation ID: S1520532-->
+
+<!-- MPD XML Starter code Semester B Session 2018 2019 -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingBottom="14dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingTop="14dp"
+    android:background="#f5f5f5">
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/salutation"-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:text="Welcome to Mobile Platform Development"-->
+    <!--        />-->
+    <!--    <Button-->
+    <!--        android:id="@+id/startButton"-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:text="Press to get data"-->
+    <!--        />-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/acknowledgement"-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:text="Traffic Scotland Road Data"-->
+    <!--        />-->
+    <!--    <TextView-->
+    <!--        android:id="@+id/rawDataDisplay"-->
+    <!--        android:layout_width="fill_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:text="Raw Data is Displayed here"-->
+    <!--        />-->
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="380dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="2dp"
+        app:srcCompat="@drawable/traffic_scotland_logo"
+        android:contentDescription="Traffic Scotland Logo"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:text="Welcome!"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:text="The purpose of this app is to provided relevant, up to date information to road users on Scotland's motorway and trunk road network. The aim is to help drivers make informed choices about the timing, routing and travel mode for current or future journeys."
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="335dp"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="Select one of the options below for an update" />
+
+    <Button
+        android:id="@+id/currentIncidentsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:text="Current Incidents" />
+
+    <Button
+        android:id="@+id/plannedRoadworksButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/roadworksButton"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:text="Planned Roadworks" />
+
+    <Button
+        android:id="@+id/roadworksButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@id/currentIncidentsButton"
+        android:layout_centerHorizontal="true"
+        android:text="Roadworks" />
+    <Button
+        android:id="@+id/mapsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/plannedRoadworksButton"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:text="Map View" />
+
+</RelativeLayout>

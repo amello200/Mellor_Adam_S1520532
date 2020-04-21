@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    Student Name: Adam James Mellor-->
+<!--    Student Matriculation ID: S1520532-->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/roadworks_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Incidents"
+    android:paddingBottom="14dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingTop="14dp"
+    android:background="#f5f5f5">
+
+    <TextView
+        android:id="@+id/currentIncidentsText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textAlignment="center"
+        android:text="Current Traffic Incidents">
+    </TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:textAlignment="center"
+        android:text="Potentially a lack of results due to COVID-19 Lockdown - Check back later"
+        android:layout_marginTop="90dp">
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/currentIncidentsList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="120dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="69dp">
+
+    </ListView>
+
+</RelativeLayout>

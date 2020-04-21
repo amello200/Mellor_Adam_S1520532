@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--    Student Name: Adam James Mellor-->
+<!--    Student Matriculation ID: S1520532-->
+
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#511378</color>
+    <color name="colorAccent">#9f9fa3</color>
+
+    <color name="myGreen">#35F400</color>
+    <color name="myOrange">#FF9900</color>
+    <color name="myRed">#FF0006</color>
+
+</resources>
